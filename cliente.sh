@@ -24,12 +24,11 @@ MSG=`nc -l $PORT`
 
 echo "(5) SEND_FILE: vaca.vaca"
 
-echo "FILE_NAME vaca.vaca" | nc $SERVER_ADD $PORT
+FILE_NAME=vaca.vaca
+
+echo "FILE_NAME $FILE_NAME" | nc $SERVER_ADD $PORT
 
 echo "(6) LISTEN: Comprobacion nombre archivo"
-
-MSG=`nc -l $PORT`
-
 
 
 

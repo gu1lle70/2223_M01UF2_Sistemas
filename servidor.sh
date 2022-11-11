@@ -44,7 +44,7 @@ FILE_NAME=`echo $MSG | cut -d " " -f 2`
      echo "KO_FILE_NAME" | nc $IP_CLIENT $PORT
  exit 2 
  fi
-
+cat vacas/$FILE_NAME | nc $SERVER_AD $PORT
  echo "OK_FILE_NAME" | nc $IP_CLIENT $PORT
 
 
